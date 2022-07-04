@@ -1,0 +1,53 @@
+{
+  "name": "judipay",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bootstrap": "^4.5.3",
+    "bootstrap-vue": "^2.21.1",
+    "core-js": "^3.6.5",
+    "echarts": "^5.0.0",
+    "element-ui": "^2.15.9",
+    "feather-icons": "^4.29.0",
+    "install": "^0.13.0",
+    "jquery": "^3.5.1",
+    "js-cookie": "^2.2.1",
+    "laravel-vue-pagination": "^2.3",
+    "moment": "^2.29.1",
+    "normalize.css": "^8.0.1",
+    "npm": "^8.13.2",
+    "nprogress": "^0.2.0",
+    "perfect-scrollbar": "^1.5.5",
+    "popper.js": "^1.16.1",
+    "sass": "^1.30.0",
+    "sass-loader": "^10.1.0",
+    "script-ext-html-webpack-plugin": "^2.1.5",
+    "vue": "^2.6.11",
+    "vue-html-to-paper": "^1.3.1",
+    "vue-router": "^3.2.0",
+    "vue-tree-halower": "^1.8.3",
+    "vue2-editor": "^2.10.3",
+    "vuelidate": "^0.7.6",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-vue": "^6.2.2",
+    "prettier": "^1.19.1",
+    "vue-template-compiler": "^2.6.11"
+  }
+}

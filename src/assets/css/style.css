@@ -1,0 +1,24 @@
+.cursor-pointer{
+    cursor: pointer;
+}
+.page-link {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-left: -1px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: #3b3f5c;
+    background-color: #e0e6ed;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+.paginating-container li {
+    padding: 10px 0;
+    font-weight: 600;
+    color: #3b3f5c;
+    border-radius: 4px;
+}
+.paginating-container li:not(:last-child) {
+    margin-right: 4px;
+}
