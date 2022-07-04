@@ -28,7 +28,7 @@
     "sass": "^1.30.0",
     "sass-loader": "^10.1.0",
     "script-ext-html-webpack-plugin": "^2.1.5",
-    "vue": "^2.6.11",
+    "vue": "^2.7.0",
     "vue-html-to-paper": "^1.3.1",
     "vue-router": "^3.2.0",
     "vue-tree-halower": "^1.8.3",

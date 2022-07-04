@@ -6,6 +6,7 @@ import store from './store'
 import Element from 'element-ui'
 import locale from 'element-ui/lib/locale/lang/en'
 import Vuelidate from 'vuelidate'
+import VueFeather from '@/components/vue-feather'
 
 import '@/utils/helper'
 import '@/assets/css/bootstrap/bootstrap.min.css'
@@ -21,6 +22,7 @@ import './permission'
 
 Vue.use(Element, { locale })
 Vue.use(Vuelidate)
+Vue.use(VueFeather)
 Vue.config.productionTip = false
 
 new Vue({
