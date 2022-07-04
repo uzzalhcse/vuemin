@@ -23,7 +23,7 @@
       </a>
       <ul :id="'menu_'+index" :class="{'show': is_active}" class="collapse submenu list-unstyled" data-parent="#accordionExample">
         <li v-for="child in item.children" v-if="!child.hidden" :key="child.path" :class="$route.name === child.name? 'active' : '' ">
-          <router-link :to="child.path">{{ child.meta.title }}</router-link>
+          <router-link :to="{ name: child.name}">{{ child.meta.title }}</router-link>
         </li>
       </ul>
     </li>

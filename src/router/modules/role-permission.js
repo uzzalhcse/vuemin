@@ -5,7 +5,7 @@ import AdminLayout from '@/layout/admin'
 const rolesPermissionRouter = {
   path: '/role-permission',
   component: AdminLayout,
-  name: 'Roles&Permission',
+  name: 'RolesPermission',
   meta: {
     title: 'Roles & Permissions',
     module: ['user_role_management'],
@@ -16,7 +16,7 @@ const rolesPermissionRouter = {
     * Role and Permission
     */
     {
-      path: '/roles',
+      path: 'roles',
       component: () => import('@/views/admin/roles-permissions/role-permissions'),
       name: 'RoleAndPermissions',
       meta: { title: 'Role', slugs: ['user_role_management.roles.index'] }
@@ -39,7 +39,7 @@ const rolesPermissionRouter = {
     * User
     */
     {
-      path: '/users',
+      path: 'users',
       component: () => import('@/views/admin/roles-permissions/users'),
       name: 'Users',
       meta: { title: 'Users', slugs: ['user_role_management.users.index'] }

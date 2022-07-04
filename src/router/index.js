@@ -49,6 +49,27 @@ export const publicRoutes = [
         meta: { title: 'Dashboard', icon: 'home' }
       }
     ]
+  },
+  {
+    path: '/settings',
+    name: 'Settings',
+    redirect: '/profile',
+    component: AdminLayout,
+    meta: { title: 'Settings', icon: 'home' },
+    children: [
+      {
+        path: 'profile',
+        name: 'Profile',
+        component: () => import('@/views/admin/Dashboard'),
+        meta: { title: 'Profile', icon: 'home' }
+      },
+      {
+        path: 'change-password',
+        name: 'ChangePassword',
+        component: () => import('@/views/admin/Dashboard'),
+        meta: { title: 'Change Password', icon: 'home' }
+      }
+    ]
   }
 ]
 
@@ -60,7 +81,7 @@ export const asyncRoutes = [
   officeRouter,
   rolesPermissionRouter,
   // 404 page must be placed at the end !!!
-  // { path: '*', redirect: '/404', hidden: true }
+  { path: '*', redirect: '/404', hidden: true }
 ]
 const createRouter = () => new VueRouter({
   mode: 'history',

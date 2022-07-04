@@ -16,7 +16,7 @@ const officeRouter = {
     * For Role and Permission
     */
     {
-      path: '/offices',
+      path: 'offices',
       component: () => import('@/views/admin/office'),
       name: 'Offices',
       meta: { title: 'Offices', slugs: ['office_management.offices.index'] }

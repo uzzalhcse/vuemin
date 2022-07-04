@@ -73,53 +73,28 @@ export default {
 
     const icon = feather.icons[type]
 
-    return createElement(
-      props.tag,
+    return icon ? createElement(
+      'svg',
 
       {
-        ...data,
-
         attrs: {
-          ...data.attrs,
-          'data-name': type,
-          'data-tags': icon ? icon.tags : '',
-          'data-type': type
+          ...icon.attrs,
+          fill: props.fill,
+          height: size,
+          stroke: props.stroke,
+          'stroke-linecap': props.strokeLinecap,
+          'stroke-linejoin': props.strokeLinejoin,
+          'stroke-width': props.strokeWidth,
+          width: size
         },
 
-        class: {
-          ...data.class,
-          feather: true,
-          [`feather--${type}`]: type,
-          [`feather--${animation}`]: animation,
-          [`feather--${animationSpeed}`]: animationSpeed
+        class: [icon.attrs.class],
+
+        domProps: {
+          innerHTML: icon.contents
         }
-      },
-
-      [
-        icon ? createElement(
-          'svg',
-
-          {
-            attrs: {
-              ...icon.attrs,
-              fill: props.fill,
-              height: size,
-              stroke: props.stroke,
-              'stroke-linecap': props.strokeLinecap,
-              'stroke-linejoin': props.strokeLinejoin,
-              'stroke-width': props.strokeWidth,
-              width: size
-            },
-
-            class: [icon.attrs.class, 'feather__content'],
-
-            domProps: {
-              innerHTML: icon.contents
-            }
-          }
-        ) : ''
-      ]
-    )
+      }
+    ) : ''
   }
 }
 </script>
