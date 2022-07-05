@@ -86,8 +86,8 @@
               <div class="media mx-auto">
                 <img :src="auth.avatar" class="img-fluid mr-2" alt="avatar">
                 <div class="media-body">
-                  <h5>Xavier</h5>
-                  <p>Project Leader</p>
+                  <h5>{{ auth.name }}</h5>
+                  <p>{{auth.office ? auth.office.name : 'N/A'}}</p>
                 </div>
               </div>
             </div>

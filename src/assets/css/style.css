@@ -26,3 +26,9 @@
     /*max-width: 200px;*/
     width: 100%;
 }
+.btn-danger {
+    box-shadow: 0px 2px 20px -10px #e7515a;
+}
+.btn-primary {
+    box-shadow: 0px 2px 20px -10px #e7515a;
+}
