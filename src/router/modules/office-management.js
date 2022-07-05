@@ -9,7 +9,7 @@ const officeRouter = {
   meta: {
     title: 'Office',
     module: ['office_management'],
-    icon: 'table'
+    icon: 'briefcase'
   },
   children: [
     /*
@@ -19,7 +19,7 @@ const officeRouter = {
       path: 'offices',
       component: () => import('@/views/admin/office'),
       name: 'Offices',
-      meta: { title: 'Offices', slugs: ['office_management.offices.index'] }
+      meta: { title: 'Offices', icon: 'briefcase', slugs: ['office_management.offices.index'] }
     },
     {
       path: 'add-office',

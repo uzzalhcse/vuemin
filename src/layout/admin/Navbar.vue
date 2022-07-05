@@ -78,13 +78,13 @@
 
         <li class="nav-item dropdown user-profile-dropdown  order-lg-0 order-1">
           <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="userProfileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-<!--            <img src="@/assets/img/90x90.jpg" alt="avatar">-->
-            <feather type="user"></feather>
+            <img v-if="auth.avatar" :src="auth.avatar" alt="avatar">
+            <feather v-else type="user"></feather>
           </a>
           <div class="dropdown-menu position-absolute" aria-labelledby="userProfileDropdown">
             <div class="user-profile-section">
               <div class="media mx-auto">
-                <img src="@/assets/img/90x90.jpg" class="img-fluid mr-2" alt="avatar">
+                <img :src="auth.avatar" class="img-fluid mr-2" alt="avatar">
                 <div class="media-body">
                   <h5>Xavier</h5>
                   <p>Project Leader</p>
@@ -112,8 +112,15 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
   name: 'Navbar',
+  computed: {
+    ...mapGetters([
+      'auth'
+    ])
+  },
   methods: {
     toggleSideBar() {
       this.$store.dispatch('app/toggleSideBar')

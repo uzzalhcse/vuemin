@@ -74,7 +74,6 @@ const actions = {
       })
     })
   },
-
   // user logout
   logout({ commit, state, dispatch }) {
     return new Promise((resolve, reject) => {

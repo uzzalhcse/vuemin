@@ -55,20 +55,20 @@ export const publicRoutes = [
     name: 'Settings',
     redirect: '/profile',
     component: AdminLayout,
-    meta: { title: 'Settings', icon: 'home' },
+    meta: { title: 'Settings', icon: 'settings' },
     children: [
       {
         path: 'profile',
         name: 'Profile',
-        component: () => import('@/views/admin/Dashboard'),
-        meta: { title: 'Profile', icon: 'home' }
-      },
-      {
-        path: 'change-password',
-        name: 'ChangePassword',
-        component: () => import('@/views/admin/Dashboard'),
-        meta: { title: 'Change Password', icon: 'home' }
+        component: () => import('@/views/admin/settings'),
+        meta: { title: 'Profile', icon: 'user' }
       }
+      // {
+      //   path: 'change-password',
+      //   name: 'ChangePassword',
+      //   component: () => import('@/views/admin/Dashboard'),
+      //   meta: { title: 'Change Password', icon: 'home' }
+      // }
     ]
   }
 ]

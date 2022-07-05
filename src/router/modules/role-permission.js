@@ -9,7 +9,7 @@ const rolesPermissionRouter = {
   meta: {
     title: 'Roles & Permissions',
     module: ['user_role_management'],
-    icon: 'table'
+    icon: 'package'
   },
   children: [
     /*

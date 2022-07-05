@@ -22,3 +22,7 @@
 .paginating-container li:not(:last-child) {
     margin-right: 4px;
 }
+.upload-img{
+    /*max-width: 200px;*/
+    width: 100%;
+}
