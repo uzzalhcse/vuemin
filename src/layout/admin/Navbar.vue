@@ -3,16 +3,6 @@
   <div class="header-container fixed-top">
     <header class="header navbar navbar-expand-sm">
       <a href="javascript:void(0);" class="sidebarCollapse" data-placement="bottom" @click="toggleSideBar"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></a>
-
-<!--      <ul class="navbar-item flex-row">-->
-<!--        <li class="nav-item align-self-center page-heading">-->
-<!--          <div class="page-header">-->
-<!--            <div class="page-title">-->
-<!--              <h3>Layouts</h3>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </li>-->
-<!--      </ul>-->
       <ul class="navbar-item flex-row search-ul">
         <li class="nav-item align-self-center search-animated">
           <feather type="search"></feather>
@@ -24,7 +14,7 @@
         </li>
       </ul>
       <ul class="navbar-item flex-row navbar-dropdown">
-        <li class="nav-item dropdown language-dropdown more-dropdown">
+        <li v-if="0" class="nav-item dropdown language-dropdown more-dropdown">
           <div class="dropdown  custom-dropdown-icon">
             <a class="dropdown-toggle btn" href="#" role="button" id="customDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="@/assets/img/flag-ca.svg" class="flag-width" alt="flag"><span>English</span> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
 
@@ -34,7 +24,7 @@
             </div>
           </div>
         </li>
-        <li class="nav-item dropdown notification-dropdown">
+        <li v-if="0" class="nav-item dropdown notification-dropdown">
           <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="notificationDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <feather type="bell"></feather>
           </a>

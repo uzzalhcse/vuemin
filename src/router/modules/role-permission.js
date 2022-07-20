@@ -19,7 +19,7 @@ const rolesPermissionRouter = {
       path: 'roles',
       component: () => import('@/views/admin/roles-permissions/role-permissions'),
       name: 'RoleAndPermissions',
-      meta: { title: 'Role', slugs: ['user_role_management.roles.index'] }
+      meta: { title: 'Role', icon: 'octagon', slugs: ['user_role_management.roles.index'] }
     },
     {
       path: 'add-role',
@@ -42,7 +42,7 @@ const rolesPermissionRouter = {
       path: 'users',
       component: () => import('@/views/admin/roles-permissions/users'),
       name: 'Users',
-      meta: { title: 'Users', slugs: ['user_role_management.users.index'] }
+      meta: { title: 'Users', icon: 'users', slugs: ['user_role_management.users.index'] }
     },
     {
       path: 'add-user',

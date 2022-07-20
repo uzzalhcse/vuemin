@@ -53,9 +53,9 @@
               </table>
             </div>
             <div class="paginating-container pagination-solid">
-              <div class="row justify-content-center">
+              <div class="justify-content-center">
                 <div class="col-6 offset-3">
-                  <pagination :data="item" @pagination-change-page="getItems">
+                  <pagination :data="item" :limit="1" size="small" align="center" @pagination-change-page="getItems">
                     <template #prev-nav>
                       <span>Prev</span>
                     </template>

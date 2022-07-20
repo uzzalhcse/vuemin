@@ -12,6 +12,12 @@ export default {
       method: 'get'
     })
   },
+  roleDelete(id) {
+    return request({
+      url: `${prefix}/roles/${id}`,
+      method: 'delete'
+    })
+  },
   /*
   *
   * Users
