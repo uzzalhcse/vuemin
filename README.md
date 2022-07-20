@@ -9,7 +9,9 @@ Understanding and learning this knowledge in advance will greatly help the use o
 ## Features
 
 ```
+- Cork Admin Template
 - Login / Logout
+- Dynamic Route Handle based on ACL
 
 - Roles and Permission
   - Manage roles and assign permission
