@@ -11,6 +11,7 @@ Understanding and learning this knowledge in advance will greatly help the use o
 ```
 - Cork Admin Template
 - Login / Logout
+- Laravel Pagination
 - Dynamic Route Handle based on ACL
 
 - Roles and Permission
@@ -33,6 +34,10 @@ Understanding and learning this knowledge in advance will greatly help the use o
   - Feather Icon components
 ```
 
+![alt text](./screenshots/login.png)
+![alt text](./screenshots/edit-role.png)
+![alt text](./screenshots/profile.png)
+![alt text](./screenshots/users.png)
 ## Getting started
 
 ```bash
